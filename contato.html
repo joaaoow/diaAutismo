@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia do Orgulho Autista - Contato</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-image: url('https://sintrajufe.org.br/wp-content/uploads/2024/04/2-aut2-1-1.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            margin: 0;
+            color: #ecf0f1; 
+        }
+
+       
+        header {
+            width: 100%;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); 
+        }
+
+        .header-content-wrapper {
+            background-color: rgba(26, 42, 35, 0.9); 
+            padding: 1rem; 
+            border-bottom-left-radius: 0.5rem; 
+            border-bottom-right-radius: 0.5rem; 
+            max-width: 1200px; 
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 1rem; 
+            padding-right: 1rem; 
+            display: flex;
+            flex-direction: column; 
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-container {
+            margin-bottom: 1rem; 
+        }
+
+        .logo-link {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem; 
+            font-size: 1.25rem; 
+            font-weight: 700;
+            color: #fff;
+            border-radius: 0.375rem; 
+            padding: 0.5rem;
+            transition: background-color 150ms ease-in-out; 
+        }
+
+        .logo-link:hover {
+            background-color: rgba(74, 124, 89, 1); 
+        }
+
+        .logo-img {
+            border-radius: 9999px; 
+            width: 2.5rem; 
+            height: 2.5rem; 
+            object-fit: cover;
+        }
+
+        nav ul {
+            display: flex;
+            flex-direction: column; 
+            gap: 0.5rem; 
+            width: 100%;
+            align-items: center;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 0.5rem 1rem; 
+            border-radius: 0.375rem; 
+            transition: background-color 150ms ease-in-out; 
+            color: #fff;
+        }
+
+        nav ul li a:hover {
+            background-color: rgba(74, 124, 89, 1); 
+        }
+        
+        main {
+            padding: 2rem 1rem;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .content-wrapper {
+            background-color: rgba(255, 255, 255, 0.9); 
+            min-height: 400px; 
+            border-radius: 0.5rem; 
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); 
+            padding: 2rem;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            color: #1f2937; 
+        }
+
+        h1 {
+            font-size: 2.5rem; 
+            font-weight: 700; 
+            margin-bottom: 1.5rem;
+            text-align: center;
+            color: #27ae60; 
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            color: #333;
+            text-align: left;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group textarea {
+            padding: 0.8rem;
+            border: 1px solid #ccc;
+            border-radius: 0.3rem;
+            font-size: 1rem;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .form-group input[type="submit"] {
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            padding: 1rem 1.5rem;
+            border-radius: 0.3rem;
+            font-size: 1.2rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-group input[type="submit"]:hover {
+            background-color: #1f8b4c;
+        }
+
+        .contact-info {
+            margin-top: 2rem;
+            text-align: center;
+            color: #333;
+        }
+
+        .contact-info p {
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-info a {
+            color: #27ae60;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+
+       
+        footer {
+            background-color: rgba(26, 42, 35, 0.9);
+            padding: 1rem; 
+            text-align: center;
+            color: #a7d9b9; 
+            width: 100%;
+            margin-top: auto; 
+        }
+
+        @media (min-width: 768px) {
+            .header-content-wrapper {
+                flex-direction: row;
+                margin-bottom: 0;
+                padding-left: 15%; 
+                padding-right: 15%; 
+            }
+
+            nav ul {
+                flex-direction: row; 
+                margin-bottom: 0; 
+                gap: 1.5rem; 
+            }
+
+            nav ul li {
+                margin-bottom: 0; 
+            }
+
+            .content-wrapper {
+                padding-left: 15%; 
+                padding-right: 15%; 
+        }
+    }
+    </style>
+</head>
+<body>
+   
+    <header>
+        <div class="header-content-wrapper">
+           
+            <div class="logo-container">
+                <a href="index.html" class="logo-link">
+                   
+                    <span>Orgulho Autista</span>
+                </a>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre o Autismo</a></li>
+                    <li><a href="historias.html">Histórias</a></li>
+                    <li><a href="recurso.html">Recursos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+    <main>
+        <div class="content-wrapper">
+            <h1>Contato e Participação</h1>
+            <p>
+                Se você tem alguma dúvida, sugestão, ou deseja contribuir para a causa do Orgulho Autista, sinta-se à vontade para nos contatar. Sua participação é muito importante!
+            </p>
+
+            <form class="contact-form" action="# " method="POST">
+                <div class="form-group">
+                    <label for="name">Seu Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Seu E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Sua Mensagem:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Enviar Mensagem">
+                </div>
+            </form>
+
+            <div class="contact-info">
+                <p>Você também pode nos seguir nas redes sociais (links apenas para demonstração):</p>
+                <p>
+                    <a href="https://www.facebook.com" target="_blank">Facebook</a> |
+                    <a href="https://www.instagram.com" target="_blank">Instagram</a> |
+                    <a href="https://twitter.com" target="_blank">Twitter</a>
+                </p>
+            </div>
+        </div>
+    </main>
+
+   
+    <footer>
+        <div class="container-footer">
+            <p>&copy; 2025 Dia do Orgulho Autista. Todos os direitos reservados.</p>
+            <p> Guilherme do Couto | João Pedro. UCB</p>
+        </div>
+    </footer>
+</body>
+</html>
